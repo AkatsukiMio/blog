@@ -23,5 +23,5 @@ Edgeone相信各位已经耳有所闻了，其提供了不限量的流量和请�
 看到这里意味着你已经拿到了2个EdgeOne免费套餐，快去 ~~挥霍~~ 使用吧！ \
 **速度如下（新疆地区被拦了没办法，介意的勿用）：**
 ![](https://cdn.jsdmirror.com/gh/AkatsukiMio/cdn1/img/3-2025/202508201544556.jpg)
-Edgeone还可以实现反代（例如：pixiv、jsdelivr...） \
+Edgeone不仅可以实现加速还可以实现反代（例如：pixiv、jsdelivr...） \
 后面有时间再出教程吧(≧∇≦)ﾉ
