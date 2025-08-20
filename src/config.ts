@@ -8,8 +8,8 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "长岗中学",
-	subtitle: "广州市花都区花城街长岗初级中学",
+	title: "AkatsukiMioの小窝",
+	subtitle: "晓城澪",
 	lang: "zh_CN", 
 	themeColor: {
 		hue: 250, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
@@ -17,7 +17,7 @@ export const siteConfig: SiteConfig = {
 	},
 	banner: {
 		enable: true,
-		src: "https://cdn.jsdmirror.com/gh/AkatsukiMio/cdn1/img/3-2025/202508172242980.webp", //图片链接
+		src: "https://cdn.jsdmirror.com/gh/AkatsukiMio/cdn1/img/3-2025/202507061233026.png", //图片链接
 		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
 			enable: false, // Display the credit text of the banner image
@@ -47,8 +47,8 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		LinkPreset.About,
 		{
-			name: "支持",
-			url: "https://blog.akatsukimio.top/", // Internal links should not include the base path, as it is automatically added
+			name: "导航页",
+			url: "https://www.akatsukimio.top/", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 	],
@@ -57,25 +57,25 @@ export const navBarConfig: NavBarConfig = {
 //简介
 
 export const profileConfig: ProfileConfig = {
-	avatar: "https://cdn.jsdmirror.com/gh/AkatsukiMio/cdn1/img/3-2025/202508182237369.jpg", //图片链接
-	name: "长岗中学",
-	bio: "努力让每一个学生得到成长",
+	avatar: "https://cdn.jsdmirror.com/gh/AkatsukiMio/cdn1/img/3-2025/202508192246459.jpg", //图片链接
+	name: "AkatsukiMio",
+	bio: "我希望在广阔的原野上向前行走 并能自由地思想",
 	links: [
 		//个人外链
 		{
-			name: "WeChat",
-			icon: "fa6-brands:weixin", //图标位于https://icones.js.org/，可自行pnpm安装添加
-			url: "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI4ODk1OTI2OQ==&scene=124#wechat_redirect",
+			name: "Bilibili",
+			icon: "fa6-brands:bilibili", //图标位于https://icones.js.org/，可自行pnpm安装添加
+			url: "https://space.bilibili.com/2065828566",
 		},
 		{
-			name: "Telephone",
-			icon: "hugeicons:telephone",
-			url: "tel:02086845532",
+			name: "Github",
+			icon: "fa6-brands:github",
+			url: "https://github.com/AkatsukiMio",
 		},
 		{
-			name: "E-mail",
+			name: "mail",
 			icon: "hugeicons:mail-02",
-			url: "mailto:hdcgzx@163.com",
+			url: "mailto:admin@akatsukimio.top",
 		},
 	],
 };
