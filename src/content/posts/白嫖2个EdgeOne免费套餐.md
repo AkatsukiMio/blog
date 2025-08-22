@@ -9,7 +9,7 @@ draft: false
 lang: 'zh_CN'
 ---
 Edgeone相信各位已经耳有所闻了，其提供了不限量的流量和请求，并且免费套餐长期有效。 \
-更重要的是**支持ipv6回源**这对应家宽建站的别提有多方便了，快来白嫖吧ヾ(≧▽≦*)o \
+更重要的是***支持ipv6回源***这对应家宽建站的别提有多方便了，快来白嫖吧ヾ(≧▽≦*)o \
 打开链接进入EdgeOne测速界面进行测速
 > https://edgeone.ai/zh/get-free-plan
 
@@ -22,6 +22,6 @@ Edgeone相信各位已经耳有所闻了，其提供了不限量的流量和请�
 :::
 看到这里意味着你已经拿到了2个EdgeOne免费套餐，快去 ~~挥霍~~ 使用吧！ \
 **速度如下（新疆地区被拦了没办法，介意的勿用）：**
-![](https://cdn-js.moeworld.top/gh/AkatsukiMio/cdn1/img/3-2025/202508201544556.jpg)
+<img src="https://cdn-js.moeworld.top/gh/AkatsukiMio/cdn1/img/3-2025/202508201544556.jpg " width="450px" height="450px">
 Edgeone不仅可以实现加速还可以实现反代（例如：pixiv、jsdelivr...） \
 后面有时间再出教程吧(≧∇≦)ﾉ
