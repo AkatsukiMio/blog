@@ -1,25 +1,33 @@
 ---
-import { getEntry, render } from "astro:content";
-import Markdown from "@components/misc/Markdown.astro";
-import I18nKey from "../i18n/i18nKey";
-import { i18n } from "../i18n/translation";
-import MainGridLayout from "../layouts/MainGridLayout.astro";
-
+title: 勘误：AULyPcのBlog中“给你的Fuwari添加一个友链页面”的错误
+published: 2025-08-23
+description: '修正AULyPcのBlog中“给你的Fuwari添加一个友链页面”的错误'
+image: ''
+tags: [勘误]
+category: '勘误'
+draft: false 
+lang: 'zh_CN'
+---
+> 原文链接：[AULyPcのBlog](https://aulypc1.github.io/posts/website/add_friendspage_in_fuwari/#%E5%88%9B%E5%BB%BA%E5%8D%A1%E7%89%87%E6%95%88%E6%9E%9C%E5%8F%8B%E9%93%BE "原文链接")
+:::important[注意]
+每个人的代码有所出入，请根据自身需求修改。
+:::
+### 错误内容
+在原文章中的：
+```js wrap=false ps frame="code" title="src\pages\friends.astro" ins={3-11, 16-45}
 const friendsPost = await getEntry('spec', 'friends')
-const { Content } = await render(friendsPost);
+const { Content } = await friendsPost.render()
 const items = [
   {
-    title: '浮生',
-    imgurl: 'https://vtdd.vip/_astro/lx.U15Ju0Ce_1mLhMp.webp',
-    desc: '有三件事人类都要经历：出生、生活和死亡。他们出生时无知无觉，死到临头，痛不欲生，活着的时候却又怠慢了人生。',
-    siteurl: 'https://vtdd.vip/',
-    tags: [''],
+    title: 'Astro',
+    imgurl: 'https://avatars.githubusercontent.com/u/44914786?s=48&v=4',
+    desc: 'The web framework for content-driven websites. ⭐️ Star to support our work!',
+    siteurl: 'https://github.com/withastro/astro',
+    tags: ['框架'],
   },
 ]
-const shuffledItems = [...items]
- .sort(() => Math.random() - 0.5);
 ---
-<MainGridLayout title={i18n(I18nKey.about)} description={i18n(I18nKey.about)}>
+<MainGridLayout title={i18n(I18nKey.friends)} description={i18n(I18nKey.friends)}>
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
         <div class="card-base z-10 px-9 py-6 relative w-full ">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-8 my-4">
@@ -58,3 +66,20 @@ const shuffledItems = [...items]
         </div>
     </div>
 </MainGridLayout>
+```
+第3行与第17行的代码中： \
+虽然`items`已定义，但模板中却使用了未定义的`shuffledItems`
+### 解决方法：
+(如果你希望友链固定排序)修改第17行的代码为：
+```diff lang="js" js showLineNumbers=false
+-   {shuffledItems.map((item) => (
++   {items.map((item) => (
+```
+(如果你希望友链随机排序)在11行后面添加：
+```diff lang="js" js showLineNumbers=false
++   const shuffledItems = [...items]
++     .sort(() => Math.random() - 0.5);
+```
+> 以上就是全部内容了 \
+> 看了这么久 \
+> 喝点水吧( •̀ ω •́ )🥤

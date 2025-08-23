@@ -17,11 +17,16 @@ Edgeone相信各位已经耳有所闻了，其提供了不限量的流量和请�
 ![](https://cdn-js.moeworld.top/gh/AkatsukiMio/cdn1/img/3-2025/202508201506916.png)
 测速完成后分享到X和Facebook获得免费套餐<div style="background-color: #000; color: #000; padding: 8px; border-radius: 4px; display: inline-block; cursor: default;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#000'">其实可以不用分享，进去后在里面转一下就会认为你分享了，这才是真正的白嫖哦o((>ω< ))o</div>
 ![](https://cdn-js.moeworld.top/gh/AkatsukiMio/cdn1/img/3-2025/202508201506324.png)
-:::important
+:::important[注意]
 该套餐只能在国际站上使用。
 :::
 看到这里意味着你已经拿到了2个EdgeOne免费套餐，快去 ~~挥霍~~ 使用吧！ \
 **速度如下（新疆地区被拦了没办法，介意的勿用）：**
 <img src="https://cdn-js.moeworld.top/gh/AkatsukiMio/cdn1/img/3-2025/202508201544556.jpg " width="450px" height="450px">
 Edgeone不仅可以实现加速还可以实现反代（例如：pixiv、jsdelivr...） \
+[pixiv反代](https://blog.akatsukimio.top/posts/%E4%BD%BF%E7%94%A8edgeone%E9%83%A8%E7%BD%B2pixiv%E5%9B%BE%E7%89%87%E5%8F%8D%E4%BB%A3/ "pixiv反代")
+<br>
 后面有时间再出教程吧(≧∇≦)ﾉ
+> 以上就是全部内容了 \
+> 看了这么久 \
+> 喝点水吧( •̀ ω •́ )🥤
