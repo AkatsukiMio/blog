@@ -1,6 +1,6 @@
 ---
 title: 勘误：AULyPcのBlog中“给你的Fuwari添加一个友链页面”的错误
-published: 2025-08-23
+published: 2025-08-21
 description: '修正AULyPcのBlog中“给你的Fuwari添加一个友链页面”的错误'
 image: ''
 tags: [勘误]

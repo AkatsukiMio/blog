@@ -1,6 +1,6 @@
 ---
 title: 使用EdgeOne搭建Pixiv图片反代
-published: 2025-08-22
+published: 2025-08-20
 description: '使用EdgeOne边缘函数搭建Pixiv图片反代'
 image: ''
 tags: [EdgeOne,Pixiv,代理]
@@ -11,13 +11,14 @@ lang: 'zh_CN'
 众所周知，Pixiv的服务在中国大陆内一直被墙，而且Pixiv的图片服务器均有防盗链的保护，只要Referer不是来自 Pixiv的请求无一例外都会返回403状态码 \
 ***How can we do?***
 ## 开始前的准备：
-- **一个能思考的脑子**: 遇到问题先思考,想不通就去问度娘，度娘找不到就去和AI调情一下再来
-- **一个EdgeOne账号**: 用于创建一个加速服务并且绑定域名支持访问
-- **一个属于你的域名**: 需要已经添加到Edgeone的加速服务的站点，用于Pixiv反代的最终访问域名
+> **你需要：**
+> - **一个能思考的脑子**: 遇到问题先思考,想不通就去问度娘，度娘找不到就去和AI调情一下再来
+> - **一个EdgeOne账号**: 用于创建一个加速服务并且绑定域名支持访问
+> - **一个属于你的域名**: 需要已经添加到Edgeone的加速服务的站点，用于Pixiv反代的最终访问域名
 
-**相关信息：**
-> Pixiv服务器域名：`i.pximg.net` \
-> Pixiv的Referer：`www.pixiv.net`
+> **相关信息：**
+> - Pixiv服务器域名：`i.pximg.net` \
+> - Pixiv的Referer：`www.pixiv.net`
 
 ## 开始
 打开链接进入EdgeOne登录界面，打开对应站点管理页面，点击“域名服务”中的“域名管理”点击“添加域名”

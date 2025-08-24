@@ -69,6 +69,11 @@ export const profileConfig: ProfileConfig = {
 			url: "https://space.bilibili.com/2065828566",
 		},
 		{
+			name: "qq",
+			icon: "fa6-brands:qq",
+			url: "https://qm.qq.com/q/EeyJDXokus",
+		},
+		{
 			name: "Github",
 			icon: "fa6-brands:github",
 			url: "https://github.com/AkatsukiMio",
