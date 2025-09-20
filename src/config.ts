@@ -71,7 +71,7 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "qq",
 			icon: "fa6-brands:qq",
-			url: "https://qm.qq.com/q/EeyJDXokus",
+			url: "https://qm.qq.com/q/upT7WpVKMw",
 		},
 		{
 			name: "Github",
