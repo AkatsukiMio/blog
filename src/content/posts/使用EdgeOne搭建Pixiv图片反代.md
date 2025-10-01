@@ -4,9 +4,10 @@ published: 2025-08-20
 description: '使用EdgeOne边缘函数搭建Pixiv图片反代'
 image: ''
 tags: [EdgeOne,Pixiv,代理]
-category: '教程'
+category: 'EdgeOne'
 draft: false 
 lang: 'zh_CN'
+series: "Pixiv"
 ---
 众所周知，Pixiv的服务在中国大陆内一直被墙，而且Pixiv的图片服务器均有防盗链的保护，只要Referer不是来自 Pixiv的请求无一例外都会返回403状态码 \
 ***How can we do?***

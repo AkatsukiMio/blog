@@ -4,9 +4,10 @@ published: 2025-07-25
 description: '测个速白嫖2个EdgeOne免费套餐'
 image: ''
 tags: [EdgeOne,白嫖,CDN]
-category: '白嫖'
+category: 'EdgeOne'
 draft: false 
 lang: 'zh_CN'
+series: "EdgeOne免费套餐"
 ---
 Edgeone相信各位已经耳有所闻了，其提供了不限量的流量和请求，并且免费套餐长期有效 \
 更重要的是***支持ipv6回源***这对应家宽建站的别提有多方便了，快来白嫖吧ヾ(≧▽≦*)o \
