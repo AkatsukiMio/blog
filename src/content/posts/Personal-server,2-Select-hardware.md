@@ -119,3 +119,7 @@ series: "个人服务器入门"
 
 别问我为什么是这个配置ಥ_ಥ
 ![](https://cdn-js.moeworld.top/gh/AkatsukiMio/cdn1/img/3-2025/202508242146512.webp)
+
+> 以上就是全部内容了 \
+> 看了这么久 \
+> 喝点水吧( •̀ ω •́ )🥤
