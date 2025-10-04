@@ -17,7 +17,7 @@ export const siteConfig: SiteConfig = {
 	},
 	banner: {
 		enable: true,
-		src: "https://cdn-js.moeworld.top/gh/AkatsukiMio/cdn1/img/3-2025/202507061233026.webp", //图片链接
+		src: "https://blog.akatsukimo.top/img/3-2025/202507061233026.webp", //图片链接
 		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
 			enable: false, // Display the credit text of the banner image
@@ -59,7 +59,7 @@ export const navBarConfig: NavBarConfig = {
 //简介
 
 export const profileConfig: ProfileConfig = {
-	avatar: "https://cdn-js.moeworld.top/gh/AkatsukiMio/cdn1/img/3-2025/202508192246459.webp", //图片链接
+	avatar: "https://blog.akatsukimo.top/img/3-2025/202508192246459.webp", //图片链接
 	name: "AkatsukiMio",
 	bio: "我希望在广阔的原野上向前行走 并能自由地思想",
 	links: [
