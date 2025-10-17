@@ -25,7 +25,7 @@ Edgeone相信各位已经耳有所闻了，其提供了不限量的流量和请�
 **速度如下（新疆地区被拦了没办法，介意的勿用）：**
 <img src="https://blog.akatsukimio.top/img/3-2025/202508201544556.webp" width="450px" height="450px">
 Edgeone不仅可以实现加速还可以实现反代（例如：pixiv、jsdelivr...） \
-[pixiv反代](https://blog.akatsukimio.top/posts/%E4%BD%BF%E7%94%A8edgeone%E9%83%A8%E7%BD%B2pixiv%E5%9B%BE%E7%89%87%E5%8F%8D%E4%BB%A3/ "pixiv反代")
+[pixiv反代](https://blog.akatsukimio.top/posts/pixiv-image-reverse-proxy-with-edgeone/ "pixiv反代")
 <br>
 后面有时间再出教程吧(≧∇≦)ﾉ
 > 以上就是全部内容了 \
