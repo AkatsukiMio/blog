@@ -110,7 +110,7 @@ series: "个人服务器入门"
 >128GB SSD  
 
 别问我为什么是这个配置ಥ_ಥ， 懂的都懂，性价比拉满，折腾起来不心疼，很适合入门练手～
-![](https://blog.akatsukimio.top/img/3-2025/202508242146512.webp)
+![](https://mcdn-eo-s1.image.akatsukimio.top/3-2025/202508242146512.webp)
 
 > 以上就是全部内容了 \
 > 看了这么久 \
