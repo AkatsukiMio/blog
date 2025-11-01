@@ -60,9 +60,9 @@ Pixiv网站上的原始链接(直接打开或在其他网站使用会返回 403)
 https://i.pximg.net/img-master/img/2021/06/10/18/09/04/90457556_p0_master1200.jpg \
 原始图片链接(无法正常显示)
 <img src="https://i.pximg.net/img-master/img/2021/06/10/18/09/04/90457556_p0_master1200.jpg" width="350px" height="200px">
-反向代理(能正常访问)(来源https://blog.yuki.sh )： \
-https://i.yuki.sh/img-master/img/2021/06/10/18/09/04/90457556_p0_master1200.jpg
-<img src="https://i.yuki.sh/img-master/img/2021/06/10/18/09/04/90457556_p0_master1200.jpg" width="350px" height="350px">
+反向代理(能正常访问)： \
+https://pixiv.akatsukimio.top/img-master/img/2021/06/10/18/09/04/90457556_p0_master1200.jpg
+<img src="https://pixiv.akatsukimio.top/img-master/img/2021/06/10/18/09/04/90457556_p0_master1200.jpg" width="350px" height="350px">
 
 ## 番外
 其实还可以添加一些配置哦（＾∀＾●）ﾉｼ 找到“站点加速”找到“节点缓存TTL”点击差异化设置，然后有时间可以有多长拉多长，可以降低热门图片请求时间的等待哦(╹ڡ╹ )
