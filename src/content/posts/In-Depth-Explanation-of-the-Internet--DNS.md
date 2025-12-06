@@ -141,6 +141,6 @@ Address:  104.19.37.5
 `Q`：全球有13个根域名服务器，而中国没有根服务器会不会被其它国家恶意断网。  
 `A`：不会，根域名服务器采用了anycast技术，某些营销号说是都在国外，实际上国内也是有节点，并且国内有根服务器镜像，不会被恶意断网。  
 
-感兴趣的话可以到ICANN及相关网站查看详细内容
-[pixiv反代](https://root-servers.org/ "pixiv反代")
-[pixiv反代](https://www.iana.org/domains/root/servers "pixiv反代")
+感兴趣的话可以到ICANN及相关网站查看详细内容  
+[全球根服务器分布](https://root-servers.org/ "全球根服务器分布")
+[ICANN](https://www.iana.org/domains/root/servers "ICANN")
