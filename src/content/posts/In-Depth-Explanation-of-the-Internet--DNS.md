@@ -11,7 +11,7 @@ series: "详解互联网-DNS篇"
 ---
 引言：根服务器，一个经常被提到的互联网关键设施，但是不凡想想，我们在使用互联网浏览任意网站时，我们都会向本地（实际上大多数本地DNS都会向公共DNS发出请求）或公共DNS服务器发出请求。  
 这其中根服务器好像并没有为我们提供任何服务，那么根服务器是互联网的基石这种说法又从何而来呢？
-![](https://mcdn-eo-s1.image.akatsukimio.top/4-2025/202508261531763.webp)
+![](https://cdn1.f9e8ac3a.er.aliyun-esa.net/4-2025/202508261531763.webp)
 
 ## 什么是DNS
 TCP/IP协议为互联网设备提供了通过IP地址相互连接的能力，但IP地址是一串数字，对用户而言难以记忆且不便使用。为解决这一问题，DNS（Domain Name System）应运而生。  
@@ -142,5 +142,5 @@ Address:  104.19.37.5
 `A`：不会，根域名服务器采用了anycast技术，某些营销号说是都在国外，实际上国内也是有节点，并且国内有根服务器镜像，不会被恶意断网。  
 
 感兴趣的话可以到ICANN及相关网站查看详细内容  
-[全球根服务器分布](https://root-servers.org/ "全球根服务器分布")
+[全球根服务器分布](https://root-servers.org/ "全球根服务器分布")   
 [ICANN](https://www.iana.org/domains/root/servers "ICANN")
