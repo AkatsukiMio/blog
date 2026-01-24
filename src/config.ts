@@ -17,7 +17,7 @@ export const siteConfig: SiteConfig = {
 	},
 	banner: {
 		enable: true,
-		src: "https://cdn1.f9e8ac3a.er.aliyun-esa.net/3-2025/202507061233026.webp", //图片链接
+		src: "https://i0.imgcdn.azuremio.com/archive/019beb5752ff77e89faf43709cac1491.png", //图片链接
 		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
 			enable: false, // Display the credit text of the banner image
@@ -59,7 +59,7 @@ export const navBarConfig: NavBarConfig = {
 //简介
 
 export const profileConfig: ProfileConfig = {
-	avatar: "https://cdn1.f9e8ac3a.er.aliyun-esa.net/3-2025/202507061230235.webp", //图片链接
+	avatar: "https://i0.imgcdn.azuremio.com/archive/019bee3d1aaa73f89fe35483aa0343b7.jpg", //图片链接
 	name: "AzureMio",
 	bio: "我希望在广阔的原野上向前行走 并能自由地思想",
 	links: [

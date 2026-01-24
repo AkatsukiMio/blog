@@ -85,20 +85,20 @@ i.zdnscloud.cn  AAAA IPv6 address = 2401:8d00:1::1
 b.zdnscloud.cn  internet address = 203.99.25.1
 ```
 
-#### 2.下面我们任选一个负责该顶级域名的权威域名服务器查询负责`akatsukimio.top`的权威域名服务器。
+#### 2.下面我们任选一个负责该顶级域名的权威域名服务器查询负责`azuremio.com`的权威域名服务器。
 ```bash
-C:\Users\server>nslookup akatsukimio.top f.zdnscloud.cn
+C:\Users\server>nslookup azuremio.com f.zdnscloud.cn
 服务器:  UnKnown
 Address:  116.169.54.111
 
-名称:    akatsukimio.top
+名称:    azuremio.com
 Served by:
 - arch.ns.cloudflare.com
 
-          akatsukimio.top
+          azuremio.com
 - elisabeth.ns.cloudflare.com
 
-          akatsukimio.top
+          azuremio.com
 ```
 
 #### 3.下面我们任选一个负责该域名的权威域名服务器查询`blog.azuremio.com`的权威域名服务器/解析记录。
