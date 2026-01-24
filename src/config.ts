@@ -8,7 +8,7 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "AkatsukiMioの小窝",
+	title: "AzureMioの小窝",
 	subtitle: "晓城澪",
 	lang: "zh_CN", 
 	themeColor: {
@@ -60,7 +60,7 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
 	avatar: "https://cdn1.f9e8ac3a.er.aliyun-esa.net/3-2025/202507061230235.webp", //图片链接
-	name: "AkatsukiMio",
+	name: "AzureMio",
 	bio: "我希望在广阔的原野上向前行走 并能自由地思想",
 	links: [
 		//个人外链

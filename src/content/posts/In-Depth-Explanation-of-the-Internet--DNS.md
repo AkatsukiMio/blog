@@ -42,9 +42,9 @@ DNS的核心功能是将域名（Domain Name）与IP地址建立映射关系，�
 这两种解析方式的不同导致了我们在平时中都是使用递归解析而非迭代解析。对于公共DNS服务器后面的个层级DNS服务器不熟悉，因此根域名服务器貌似在域名解析的过程中用处不大，其实用处大的很呢。  
 
 ## 实践出真知
-下面我们以本博客域名：`blog.akatsukimio.top`为例进行一次迭代解析。  
+下面我们以本博客域名：`blog.azuremio.com`为例进行一次迭代解析。  
 #### 1.向根域名服务器查询负责`.top`的权威域名服务器。
-```NSLOOKUP
+```bash
 C:\Users\server>nslookup -type=ns top. a.root-servers.net
 ip6.arpa        nameserver = b.ip6-servers.arpa
 ip6.arpa        nameserver = d.ip6-servers.arpa
@@ -86,7 +86,7 @@ b.zdnscloud.cn  internet address = 203.99.25.1
 ```
 
 #### 2.下面我们任选一个负责该顶级域名的权威域名服务器查询负责`akatsukimio.top`的权威域名服务器。
-```NSLOOKUP
+```bash
 C:\Users\server>nslookup akatsukimio.top f.zdnscloud.cn
 服务器:  UnKnown
 Address:  116.169.54.111
@@ -101,35 +101,35 @@ Served by:
           akatsukimio.top
 ```
 
-#### 3.下面我们任选一个负责该域名的权威域名服务器查询`blog.akatsukimio.top`的权威域名服务器/解析记录。
-```NSLOOKUP
-C:\Users\server>nslookup blog.akatsukimio.top arch.ns.cloudflare.com
+#### 3.下面我们任选一个负责该域名的权威域名服务器查询`blog.azuremio.com`的权威域名服务器/解析记录。
+```bash
+C:\Users\server>nslookup blog.azuremio.com arch.ns.cloudflare.com
 服务器:  arch.ns.cloudflare.com
 Address:  2606:4700:58::adf5:3b44
 
-名称:    blog.akatsukimio.top
+名称:    blog.azuremio.com
 Served by:
 - ns1.huaweicloud-dns.cn
 
-          blog.akatsukimio.top
+          blog.azuremio.com
 - ns1.huaweicloud-dns.com
 
-          blog.akatsukimio.top
+          blog.azuremio.com
 - ns1.huaweicloud-dns.net
 
-          blog.akatsukimio.top
+          blog.azuremio.com
 - ns1.huaweicloud-dns.org
 
-          blog.akatsukimio.top
+          blog.azuremio.com
 ```
 
-#### 4.下面我们任选一个负责该域名的权威域名服务器查询负责`blog.akatsukimio.top`的权威域名服务器/解析记录。
-```NSLOOKUP
-C:\Users\server>nslookup blog.akatsukimio.top ns1.huaweicloud-dns.cn
+#### 4.下面我们任选一个负责该域名的权威域名服务器查询负责`blog.azuremio.com`的权威域名服务器/解析记录。
+```bash
+C:\Users\server>nslookup blog.azuremio.com ns1.huaweicloud-dns.cn
 服务器:  UnKnown
 Address:  2407:c080:20:ffff:ffff:fffe:0:1
 
-名称:    blog.akatsukimio.top
+名称:    blog.azuremio.com
 Address:  104.19.37.5
 ```
 
