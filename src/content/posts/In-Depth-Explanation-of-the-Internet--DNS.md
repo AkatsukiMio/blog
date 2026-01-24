@@ -45,67 +45,97 @@ DNS的核心功能是将域名（Domain Name）与IP地址建立映射关系，�
 下面我们以本博客域名：`blog.azuremio.com`为例进行一次迭代解析。  
 #### 1.向根域名服务器查询负责`.top`的权威域名服务器。
 ```bash
-C:\Users\server>nslookup -type=ns top. a.root-servers.net
-ip6.arpa        nameserver = b.ip6-servers.arpa
-ip6.arpa        nameserver = d.ip6-servers.arpa
-ip6.arpa        nameserver = f.ip6-servers.arpa
-ip6.arpa        nameserver = a.ip6-servers.arpa
-ip6.arpa        nameserver = c.ip6-servers.arpa
-ip6.arpa        nameserver = e.ip6-servers.arpa
-b.ip6-servers.arpa      internet address = 199.253.182.182
-b.ip6-servers.arpa      AAAA IPv6 address = 2001:500:86::86
-d.ip6-servers.arpa      internet address = 200.7.86.53
-d.ip6-servers.arpa      AAAA IPv6 address = 2001:13c7:7012::53
-f.ip6-servers.arpa      internet address = 193.0.9.2
-f.ip6-servers.arpa      AAAA IPv6 address = 2a13:27c0:30::2
-a.ip6-servers.arpa      internet address = 199.180.182.53
-a.ip6-servers.arpa      AAAA IPv6 address = 2620:37:e000::53
-c.ip6-servers.arpa      internet address = 196.216.169.11
-c.ip6-servers.arpa      AAAA IPv6 address = 2001:43f8:110::11
-e.ip6-servers.arpa      internet address = 203.119.86.101
-e.ip6-servers.arpa      AAAA IPv6 address = 2001:dd8:6::101
+nslookup -type=ns com. a.root-servers.net
+DNS request timed out.
+    timeout was 2 seconds.
 服务器:  UnKnown
 Address:  2001:503:ba3e::2:30
 
-top     nameserver = c.zdnscloud.com
-top     nameserver = f.zdnscloud.cn
-top     nameserver = a.zdnscloud.cn
-top     nameserver = g.zdnscloud.com
-top     nameserver = d.zdnscloud.com
-top     nameserver = j.zdnscloud.com
-top     nameserver = i.zdnscloud.cn
-top     nameserver = b.zdnscloud.cn
-c.zdnscloud.com internet address = 203.99.26.1
-f.zdnscloud.cn  internet address = 116.169.54.111
-a.zdnscloud.cn  internet address = 203.99.24.1
-g.zdnscloud.com internet address = 223.72.199.37
-d.zdnscloud.com internet address = 203.99.27.1
-j.zdnscloud.com AAAA IPv6 address = 2401:8d00:2::1
-i.zdnscloud.cn  AAAA IPv6 address = 2401:8d00:1::1
-b.zdnscloud.cn  internet address = 203.99.25.1
+com     nameserver = l.gtld-servers.net
+com     nameserver = j.gtld-servers.net
+com     nameserver = h.gtld-servers.net
+com     nameserver = d.gtld-servers.net
+com     nameserver = b.gtld-servers.net
+com     nameserver = f.gtld-servers.net
+com     nameserver = k.gtld-servers.net
+com     nameserver = m.gtld-servers.net
+com     nameserver = i.gtld-servers.net
+com     nameserver = g.gtld-servers.net
+com     nameserver = a.gtld-servers.net
+com     nameserver = c.gtld-servers.net
+com     nameserver = e.gtld-servers.net
+l.gtld-servers.net      internet address = 192.41.162.30
+l.gtld-servers.net      AAAA IPv6 address = 2001:500:d937::30
+j.gtld-servers.net      internet address = 192.48.79.30
+j.gtld-servers.net      AAAA IPv6 address = 2001:502:7094::30
+h.gtld-servers.net      internet address = 192.54.112.30
+h.gtld-servers.net      AAAA IPv6 address = 2001:502:8cc::30
+d.gtld-servers.net      internet address = 192.31.80.30
+d.gtld-servers.net      AAAA IPv6 address = 2001:500:856e::30
+b.gtld-servers.net      internet address = 192.33.14.30
+b.gtld-servers.net      AAAA IPv6 address = 2001:503:231d::2:30
+f.gtld-servers.net      internet address = 192.35.51.30
+f.gtld-servers.net      AAAA IPv6 address = 2001:503:d414::30
+k.gtld-servers.net      internet address = 192.52.178.30
+k.gtld-servers.net      AAAA IPv6 address = 2001:503:d2d::30
+m.gtld-servers.net      internet address = 192.55.83.30
+m.gtld-servers.net      AAAA IPv6 address = 2001:501:b1f9::30
+i.gtld-servers.net      internet address = 192.43.172.30
+i.gtld-servers.net      AAAA IPv6 address = 2001:503:39c1::30
+g.gtld-servers.net      internet address = 192.42.93.30
+g.gtld-servers.net      AAAA IPv6 address = 2001:503:eea3::30
+a.gtld-servers.net      internet address = 192.5.6.30
+a.gtld-servers.net      AAAA IPv6 address = 2001:503:a83e::2:30
+c.gtld-servers.net      internet address = 192.26.92.30
+c.gtld-servers.net      AAAA IPv6 address = 2001:503:83eb::30
+e.gtld-servers.net      internet address = 192.12.94.30
+e.gtld-servers.net      AAAA IPv6 address = 2001:502:1ca1::30
 ```
 
 #### 2.下面我们任选一个负责该顶级域名的权威域名服务器查询负责`azuremio.com`的权威域名服务器。
 ```bash
-C:\Users\server>nslookup azuremio.com f.zdnscloud.cn
+nslookup azuremio.com a.gtld-servers.net
+(root)  nameserver = b.root-servers.net
+(root)  nameserver = c.root-servers.net
+(root)  nameserver = d.root-servers.net
+(root)  nameserver = e.root-servers.net
+(root)  nameserver = f.root-servers.net
+(root)  nameserver = g.root-servers.net
+(root)  nameserver = h.root-servers.net
+(root)  nameserver = i.root-servers.net
+(root)  nameserver = j.root-servers.net
+(root)  nameserver = k.root-servers.net
+(root)  nameserver = l.root-servers.net
+(root)  nameserver = m.root-servers.net
+(root)  nameserver = a.root-servers.net
 服务器:  UnKnown
-Address:  116.169.54.111
+Address:  2001:503:a83e::2:30
 
 名称:    azuremio.com
 Served by:
 - arch.ns.cloudflare.com
-
+          108.162.193.68
+          172.64.33.68
+          173.245.59.68
+          2606:4700:58::adf5:3b44
+          2803:f800:50::6ca2:c144
+          2a06:98c1:50::ac40:2144
           azuremio.com
 - elisabeth.ns.cloudflare.com
-
+          108.162.194.224
+          162.159.38.224
+          172.64.34.224
+          2606:4700:50::a29f:26e0
+          2803:f800:50::6ca2:c2e0
+          2a06:98c1:50::ac40:22e0
           azuremio.com
 ```
 
 #### 3.下面我们任选一个负责该域名的权威域名服务器查询`blog.azuremio.com`的权威域名服务器/解析记录。
 ```bash
-C:\Users\server>nslookup blog.azuremio.com arch.ns.cloudflare.com
-服务器:  arch.ns.cloudflare.com
-Address:  2606:4700:58::adf5:3b44
+nslookup blog.azuremio.com elisabeth.ns.cloudflare.com
+服务器:  UnKnown
+Address:  2606:4700:50::a29f:26e0
 
 名称:    blog.azuremio.com
 Served by:
@@ -125,13 +155,13 @@ Served by:
 
 #### 4.下面我们任选一个负责该域名的权威域名服务器查询负责`blog.azuremio.com`的权威域名服务器/解析记录。
 ```bash
-C:\Users\server>nslookup blog.azuremio.com ns1.huaweicloud-dns.cn
+nslookup -type=cname blog.azuremio.com ns1.huaweicloud-dns.com
 服务器:  UnKnown
 Address:  2407:c080:20:ffff:ffff:fffe:0:1
 
-名称:    blog.azuremio.com
-Address:  104.19.37.5
+blog.azuremio.com       canonical name = blog.azuremio.com.a1.inittt.com
 ```
+<div style="background-color: #000; color: #000; padding: 8px; border-radius: 4px; display: inline-block; cursor: default;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#000'">其实这里的cname还要和前面的步骤一样再来一次，就是这样会导致篇幅太长了</div>
 
 至此，你已成功手动完成了一次 DNS 迭代查询的全过程。虽然日常上网时我们依赖的是本地 DNS 提供的递归服务，但其背后正是通过这种逐级迭代的方式，从根服务器一路查到最终的 IP 地址。这也体现了 DNS 分布式、分层、高可用的设计精髓。
 
