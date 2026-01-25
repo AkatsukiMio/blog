@@ -14,10 +14,10 @@ Edgeone相信各位已经耳有所闻了，其提供了不限量的流量和请�
 打开链接进入EdgeOne测速界面进行测速
 > https://edgeone.ai/zh/get-free-plan
 
-![](https://cdn1.f9e8ac3a.er.aliyun-esa.net/3-2025/202508201506915.webp)
-![](https://cdn1.f9e8ac3a.er.aliyun-esa.net/3-2025/202508201506916.webp)
+![测速获得EdgeOne免费套餐-1](https://i0.imgcdn.azuremio.com/archive/019bee7dbaf072e0ad7d0c648328a25f.webp)
+![测速获得EdgeOne免费套餐-2](https://i0.imgcdn.azuremio.com/archive/019bee7e3dfb77bdbdcf00bfbd94161f.webp)
 测速完成后分享到X和Facebook获得免费套餐<div style="background-color: #000; color: #000; padding: 8px; border-radius: 4px; display: inline-block; cursor: default;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#000'">其实可以不用分享，进去后在里面转一下就会认为你分享了，这才是真正的白嫖哦o((>ω< ))o</div>
-![](https://cdn1.f9e8ac3a.er.aliyun-esa.net/3-2025/202508201506324.webp)
+![测速获得EdgeOne免费套餐-3](https://i0.imgcdn.azuremio.com/archive/019bee7f324c76ddb164ae7452dc4fa6.webp)
 :::important[注意]
 该套餐只能在国际站上使用
 :::

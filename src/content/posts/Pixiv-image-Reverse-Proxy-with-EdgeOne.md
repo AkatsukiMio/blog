@@ -28,8 +28,8 @@ series: "EdgeOne"
 <img src="https://cdn1.f9e8ac3a.er.aliyun-esa.net/3-2025/202508221145753.webp" width="350px" height="350px">
 如上图添加加速域名配置，按照指引添加记录，然后申请SSL证书并部署SSL证书，在等待期间让我们来部署边缘函数吧ヾ(≧▽≦*)o 到站点管理页面的侧边栏向下拉看到“边缘函数”点击函数管理
 
-![](https://cdn1.f9e8ac3a.er.aliyun-esa.net/3-2025/202508221145749.webp)
-![](https://cdn1.f9e8ac3a.er.aliyun-esa.net/3-2025/202508221145752.webp)
+![边缘函数设置-步骤1](https://i0.imgcdn.azuremio.com/archive/019bee8060897223a7aac20b9f2efd25.webp)
+![边缘函数设置-步骤2](https://i0.imgcdn.azuremio.com/archive/019bee80c9d571b991aed829f6e7181c.webp )
 
 新建一个函数，随便选一个模板，如图所示复制下面的代码保存并应用ヾ(^▽^*)))
 ```java
@@ -48,11 +48,11 @@ addEventListener("fetch", event => {
   );
 });
 ```
-![](https://cdn1.f9e8ac3a.er.aliyun-esa.net/3-2025/202508221145748.webp)
+![边缘函数设置-步骤3](https://cdn1.f9e8ac3a.er.aliyun-esa.net/3-2025/202508221145748.webp)
 **然后你就会看到：**
-![](https://cdn1.f9e8ac3a.er.aliyun-esa.net/3-2025/202508221145754.webp)
+![边缘函数设置-步骤4](https://i0.imgcdn.azuremio.com/archive/019bee8171ae775a91b420a736b53aac.webp)
 点击“新增触发规则”如下图所示进行添加规则( 不要来个小笨蛋照抄下去了哦( ´･･)ﾉ(._.`) )
-![](https://cdn1.f9e8ac3a.er.aliyun-esa.net/3-2025/202508221145755.webp)
+![边缘函数设置-步骤5](https://cdn1.f9e8ac3a.er.aliyun-esa.net/3-2025/202508221145755.webp)
 
 ## 测试
 配置完成后，就可以直接通过URL直接访问p站图片了。
@@ -66,13 +66,13 @@ https://pixiv.akatsukimio.top/img-master/img/2021/06/10/18/09/04/90457556_p0_mas
 
 ## 番外
 其实还可以添加一些配置哦（＾∀＾●）ﾉｼ 找到“站点加速”找到“节点缓存TTL”点击差异化设置，然后有时间可以有多长拉多长，可以降低热门图片请求时间的等待哦(╹ڡ╹ )
-![](https://cdn1.f9e8ac3a.er.aliyun-esa.net/3-2025/202508221145746.webp)
-![](https://cdn1.f9e8ac3a.er.aliyun-esa.net/3-2025/202508221145750.webp)
-![](https://cdn1.f9e8ac3a.er.aliyun-esa.net/3-2025/202508221145751.webp)
+![缓存规则设置-步骤1](https://i0.imgcdn.azuremio.com/archive/019bee829aa37219800a999ac70218f6.webp)
+![缓存规则设置-步骤2](https://i0.imgcdn.azuremio.com/archive/019bee8320ea77b49d3420780a829978.webp)
+![缓存规则设置-步骤3](https://i0.imgcdn.azuremio.com/archive/019bee849d83758195d3946f8288fae8.webp)
 
 ## 今日说法(bushi
 你要拿来涩涩？(っ °Д °;)っ
-<img src="https://cdn1.f9e8ac3a.er.aliyun-esa.net/3-2025/202508221327616.webp" width="350px" height="400px">
+<img src="https://i0.imgcdn.azuremio.com/archive/019bee853581710fb06904023638e2c6.webp" width="350px" height="400px">
 我问大家：张三在网络上用某境外平台的网络服务商提供色图，居然还发给ta的好兄弟一起鉴赏，请问张三的行为触犯了什么法律？ \
 啊~ 这时候有些小伙伴就要说了，张三ta有没有盈利，ta只是助人为乐帮帮ta的好兄弟嘛。各位小伙伴啊，总有一条法律适合你： \
 根据《中华人民共和国刑法》第三百六十四条，传播淫秽的书刊、影片、音像、图片或者其他淫秽物品，如果情节严重，即构成传播淫秽物品罪。此罪的关键在于“传播”行为，即广泛散布淫秽物品，且不以牟利为目的。 \
