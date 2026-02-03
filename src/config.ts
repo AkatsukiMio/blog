@@ -10,7 +10,7 @@ import { LinkPreset } from "./types/config";
 export const siteConfig: SiteConfig = {
 	title: "AzureMioの小窝",
 	subtitle: "晓城澪",
-	lang: "zh_CN", 
+	lang: "zh_CN",
 	themeColor: {
 		hue: 50, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
 		fixed: true, // Hide the theme color picker for visitors
@@ -31,11 +31,11 @@ export const siteConfig: SiteConfig = {
 	},
 	favicon: [
 		// Leave this array empty to use the default favicon
-		 {
-		   src: '/favicon/favicon.ico',    // Path of the favicon, relative to the /public directory
-		   //theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
-		   sizes: '256x256',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
-		 }
+		{
+			src: "/favicon/favicon.ico", // Path of the favicon, relative to the /public directory
+			//theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
+			sizes: "256x256", // (Optional) Size of the favicon, set only if you have favicons of different sizes
+		},
 	],
 };
 
@@ -48,18 +48,19 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Series,
 		LinkPreset.About,
 		LinkPreset.Friends,
-		{
-			name: "导航页",
-			url: "https://www.akatsukimio.top/", // Internal links should not include the base path, as it is automatically added
-			external: true, // Show an external link icon and will open in a new tab
-		},
+		//{
+		//	name: "导航页",
+		//	url: "https://www.akatsukimio.top/", // Internal links should not include the base path, as it is automatically added
+		//	external: true, // Show an external link icon and will open in a new tab
+		//},
 	],
 };
 
 //简介
 
 export const profileConfig: ProfileConfig = {
-	avatar: "https://i0.imgcdn.azuremio.com/archive/019bee3d1aaa73f89fe35483aa0343b7.jpg", //图片链接
+	avatar:
+		"https://i0.imgcdn.azuremio.com/archive/019bee3d1aaa73f89fe35483aa0343b7.jpg", //图片链接
 	name: "AzureMio",
 	bio: "我希望在广阔的原野上向前行走 并能自由地思想",
 	links: [

@@ -21,13 +21,13 @@ DNS的核心功能是将域名（Domain Name）与IP地址建立映射关系，�
 ## DNS的架构
 由于互联网中的域名非常非常多，如果都存放在一台域名服务器中，那么不仅查询速度慢，服务器压力大，而且难以保证服务的可靠性。因此，DNS采用了分布式的设计方案，大量的域名服务器之间通过层级方式组织，分布在全世界范围内。  
 就一般而言，域名服务器可以分为以下四类：
-#### 根域名服务器：
+### 根域名服务器
 最高层级的域名服务器，互联网上一共有13组根域名服务器（以英文字母A到M依序命名，格式为[a~m].root-servers.net）
-#### 顶级域名服务器：
+### 顶级域名服务器
 对于每个顶级域名，如.com、.org、.top等，都有对应的顶级域名服务器。
-#### 权威域名服务器：
+### 权威域名服务器
 一个网站需要将其域名和IP地址注册到相应的权威域名服务器中。
-#### 本地域名服务器：
+### 本地域名服务器
 本地域名服务器不属于上述域名服务器的层次结构，但是它对域名系统非常重要。每个 ISP（如一个大学、一个公司）都有一个本地域名服务器。
 
 ## DNS是如何运作的
@@ -43,7 +43,7 @@ DNS的核心功能是将域名（Domain Name）与IP地址建立映射关系，�
 
 ## 实践出真知
 下面我们以本博客域名：`blog.azuremio.com`为例进行一次迭代解析。  
-#### 1.向根域名服务器查询负责`.top`的权威域名服务器。
+### 1.向根域名服务器查询负责`.top`的权威域名服务器。
 ```bash
 nslookup -type=ns com. a.root-servers.net
 DNS request timed out.
@@ -92,7 +92,7 @@ e.gtld-servers.net      internet address = 192.12.94.30
 e.gtld-servers.net      AAAA IPv6 address = 2001:502:1ca1::30
 ```
 
-#### 2.下面我们任选一个负责该顶级域名的权威域名服务器查询负责`azuremio.com`的权威域名服务器。
+### 2.任选一个负责该顶级域名的权威域名服务器查询负责`azuremio.com`的权威域名服务器。
 ```bash
 nslookup azuremio.com a.gtld-servers.net
 (root)  nameserver = b.root-servers.net
@@ -131,7 +131,7 @@ Served by:
           azuremio.com
 ```
 
-#### 3.下面我们任选一个负责该域名的权威域名服务器查询`blog.azuremio.com`的权威域名服务器/解析记录。
+### 3.任选一个负责该域名的权威域名服务器查询`blog.azuremio.com`的权威域名服务器/解析记录。
 ```bash
 nslookup blog.azuremio.com elisabeth.ns.cloudflare.com
 服务器:  UnKnown
@@ -153,7 +153,7 @@ Served by:
           blog.azuremio.com
 ```
 
-#### 4.下面我们任选一个负责该域名的权威域名服务器查询负责`blog.azuremio.com`的权威域名服务器/解析记录。
+### 4.任选一个负责该域名的权威域名服务器查询负责`blog.azuremio.com`的权威域名服务器/解析记录。
 ```bash
 nslookup -type=cname blog.azuremio.com ns1.huaweicloud-dns.com
 服务器:  UnKnown
@@ -165,7 +165,7 @@ blog.azuremio.com       canonical name = blog.azuremio.com.a1.inittt.com
 
 至此，你已成功手动完成了一次 DNS 迭代查询的全过程。虽然日常上网时我们依赖的是本地 DNS 提供的递归服务，但其背后正是通过这种逐级迭代的方式，从根服务器一路查到最终的 IP 地址。这也体现了 DNS 分布式、分层、高可用的设计精髓。
 
-### Q&A
+## Q&A
 `Q`：根服务器域名的顶级域名是`.net`，那`.net`的权威域名服务器出现问题会不会导致互联网的根域名服务器崩溃，导致全球互联网崩溃。  
 `A`：在所有主流 DNS 软件（如BIND、Windows DNS）和操作系统中，称为“根提示（Root Hints）”。即使`.net`域名无法解析，本地 DNS 仍能直接通过IP地址联系根服务器，因此不会形成循环依赖。  
 `Q`：全球有13个根域名服务器，而中国没有根服务器会不会被其它国家恶意断网。  
