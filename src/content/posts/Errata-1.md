@@ -8,7 +8,7 @@ category: '勘误'
 draft: false 
 lang: 'zh_CN'
 ---
-> 原文链接：[AULyPcのBlog](https://aulypc1.github.io/posts/website/add_friendspage_in_fuwari/#%E5%88%9B%E5%BB%BA%E5%8D%A1%E7%89%87%E6%95%88%E6%9E%9C%E5%8F%8B%E9%93%BE "原文链接")
+> 原文链接：[AULyPcのBlog](https://aulypc1.github.io/posts/website/add_friendspage_in_fuwari/#%E5%88%9B%E5%BB%BA%E5%8D%A1%E7%89%87%E6%95%88%E6%9E%9C%E5%8F%8B%E9%93%BE "原文链接（现已修改）")
 :::important[注意]
 每个人的代码有所出入，请根据自身需求修改。
 :::

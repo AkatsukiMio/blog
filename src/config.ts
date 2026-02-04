@@ -66,12 +66,12 @@ export const profileConfig: ProfileConfig = {
 	links: [
 		//个人外链
 		{
-			name: "Bilibili",
-			icon: "fa6-brands:bilibili", //图标位于https://icones.js.org/，可自行pnpm安装添加
-			url: "https://space.bilibili.com/2065828566",
+			name: "Discord",
+			icon: "fa6-brands:discord", //图标位于https://icones.js.org/，可自行pnpm安装添加
+			url: "https://discord.com/invite/tjKc7DUe",
 		},
 		{
-			name: "qq",
+			name: "QQ",
 			icon: "fa6-brands:qq",
 			url: "https://qm.qq.com/q/upT7WpVKMw",
 		},
