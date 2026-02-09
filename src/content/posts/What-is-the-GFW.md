@@ -3,7 +3,7 @@ title: 番外-什么是GFW?
 published: 2025-10-28
 description: '1987年9月14日，北京计算机应用技术研究所发出了中国第一封电子邮件：“Across the Great Wall we can reach every corner in the world”（越过长城，走向世界）。三十多年后，另一座无形的“长城”——中国国家防火墙（Great Firewall, GFW），却成为了横亘在中国互联网与全球网络之间的巨大屏障。'
 image: ''
-tags: [GFW,审查]
+tags: [GFW,审查,互联网]
 category: '详解互联网'
 draft: false 
 lang: 'zh_CN'

@@ -3,7 +3,7 @@ title: 个人服务器入门：(1)前言
 published: 2025-08-22
 description: '个人服务器入门之前言篇'
 image: ''
-tags: [教程]
+tags: [教程,NAS]
 category: '个人服务器入门'
 draft: false 
 lang: 'zh_CN'

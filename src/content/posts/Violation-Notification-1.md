@@ -1,7 +1,7 @@
 ---
 title: Pixiv违规滥用通报
 published: 2026-01-10
-description: '很欣慰我提供的服务能给别人带来便利，但是我不希望被滥用'
+description: '很欣慰我提供的服务能给别人带来便利，但是我不希望被滥用。'
 image: ''
 tags: [通报,Pixiv]
 category: '违规通报'

@@ -3,7 +3,7 @@ title: 个人服务器入门：(3)系统选择
 published: 2025-08-28
 description: '个人服务器入门之系统选择篇'
 image: ''
-tags: [教程]
+tags: [教程,NAS]
 category: '个人服务器入门'
 draft: false 
 lang: 'zh_CN'

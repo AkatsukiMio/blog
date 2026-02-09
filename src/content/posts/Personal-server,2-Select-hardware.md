@@ -3,7 +3,7 @@ title: 个人服务器入门：(2)硬件选择
 published: 2025-08-25
 description: '个人服务器入门之硬件选择篇'
 image: ''
-tags: [教程]
+tags: [教程,NAS]
 category: '个人服务器入门'
 draft: false 
 lang: 'zh_CN'

@@ -28,6 +28,3 @@ Edgeone不仅可以实现加速还可以实现反代（例如：pixiv、jsdelivr
 [pixiv反代](https://blog.azuremio.com/posts/pixiv-image-reverse-proxy-with-edgeone/ "pixiv反代")
 <br>
 后面有时间再出教程吧(≧∇≦)ﾉ
-> 以上就是全部内容了 \
-> 看了这么久 \
-> 喝点水吧( •̀ ω •́ )🥤
